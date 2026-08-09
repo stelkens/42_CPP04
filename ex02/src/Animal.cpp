@@ -6,7 +6,7 @@
 /*   By: tstelken <tstelken@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 11:14:27 by tstelken          #+#    #+#             */
-/*   Updated: 2026/08/09 18:57:26 by tstelken         ###   ########.fr       */
+/*   Updated: 2026/08/09 19:05:41 by tstelken         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,6 @@ Animal &Animal::operator=(const Animal &other){
 		this->_type = other._type;
 	}
 	return *this;
-}
-
-
-void	Animal::makeSound(void) const{
-	std::cout << "Animal sound\n";
 }
 
 std::string		Animal::getType(void) const{

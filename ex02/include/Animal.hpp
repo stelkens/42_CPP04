@@ -6,7 +6,7 @@
 /*   By: tstelken <tstelken@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 11:14:31 by tstelken          #+#    #+#             */
-/*   Updated: 2026/08/09 18:58:34 by tstelken         ###   ########.fr       */
+/*   Updated: 2026/08/09 19:09:11 by tstelken         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,8 @@ class Animal
 
 		Animal &operator=(const Animal& other);
 
-		virtual void	makeSound() const;
+		virtual void	makeSound() const = 0;
 		std::string		getType() const;
-		virtual	Brain*	getBrain() const = 0;
 };
 
 #endif

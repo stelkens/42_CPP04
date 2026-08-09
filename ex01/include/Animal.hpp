@@ -6,13 +6,14 @@
 /*   By: tstelken <tstelken@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 11:14:31 by tstelken          #+#    #+#             */
-/*   Updated: 2026/07/28 11:41:08 by tstelken         ###   ########.fr       */
+/*   Updated: 2026/08/09 17:28:33 by tstelken         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ANIMAL_HPP
 #define ANIMAL_HPP
 
+#include "Brain.hpp"
 #include<string>
 
 class Animal
@@ -29,6 +30,7 @@ class Animal
 
 		virtual void	makeSound() const;
 		std::string		getType() const;
+		virtual	Brain*	getBrain() const = 0;
 };
 
 #endif

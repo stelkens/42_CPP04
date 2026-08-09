@@ -22,3 +22,18 @@ Brain &Brain::operator=(const Brain &other){
 	}
 	return *this;
 }
+
+void	Brain::setIdea(size_t index, const std::string &idea){
+	if(index < arraySize)
+		_ideas[index] = idea;
+}
+
+void	Brain::printIdeas(void) const{
+	std::cout << "This brain thinks:\n";
+	for(int i = 0; i < arraySize; i++)
+	{
+		if(_ideas[i] != "")
+			std::cout << "\t" << _ideas[i] << '\n';
+	}
+	std::cout << "\t*no more thoughs*\n";
+}

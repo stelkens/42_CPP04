@@ -18,7 +18,7 @@ Cat::~Cat(){
 Cat &Cat::operator=(const Cat &other){
 	if (this != &other)
 	{
-		this->_type = other._type;
+		Animal::operator=(other);
 	}
 	return *this;
 }

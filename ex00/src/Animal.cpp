@@ -6,7 +6,7 @@
 /*   By: tstelken <tstelken@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 11:14:27 by tstelken          #+#    #+#             */
-/*   Updated: 2026/07/28 12:05:51 by tstelken         ###   ########.fr       */
+/*   Updated: 2026/08/09 16:36:00 by tstelken         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ Animal::~Animal(){
 Animal &Animal::operator=(const Animal &other){
 	if (this != &other)
 	{
+		this->_type = other._type;
 	}
 	return *this;
 }

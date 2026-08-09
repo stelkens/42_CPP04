@@ -6,7 +6,7 @@
 /*   By: tstelken <tstelken@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 11:28:48 by tstelken          #+#    #+#             */
-/*   Updated: 2026/07/28 12:10:39 by tstelken         ###   ########.fr       */
+/*   Updated: 2026/08/09 16:44:39 by tstelken         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,8 @@ int main(){
 	delete j;
 	delete i;
 	delete meta;
+	std::cout << "\n\n";
 	
-    std::cout << "\n\n";
 	const WrongAnimal* wrong = new WrongAnimal();
 	const WrongAnimal* wrongCat = new WrongCat();
 
@@ -61,4 +61,5 @@ int main(){
 	
 	delete wrong;
 	delete wrongCat;
+	return 0;
 }

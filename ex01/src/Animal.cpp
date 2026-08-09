@@ -6,7 +6,7 @@
 /*   By: tstelken <tstelken@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 11:14:27 by tstelken          #+#    #+#             */
-/*   Updated: 2026/08/09 17:27:42 by tstelken         ###   ########.fr       */
+/*   Updated: 2026/08/09 18:57:52 by tstelken         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,9 @@ void	Animal::makeSound(void) const{
 
 std::string		Animal::getType(void) const{
 	return _type;
+}
+
+Brain*	Animal::getBrain() const{
+	std::cout << "Be aware: This animal has no brain, according to the subject\n";
+	return NULL;
 }

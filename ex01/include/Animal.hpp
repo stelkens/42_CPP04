@@ -6,7 +6,7 @@
 /*   By: tstelken <tstelken@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 11:14:31 by tstelken          #+#    #+#             */
-/*   Updated: 2026/08/09 18:57:46 by tstelken         ###   ########.fr       */
+/*   Updated: 2026/08/09 19:07:32 by tstelken         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ class Animal
 
 		virtual void	makeSound() const;
 		std::string		getType() const;
-		virtual	Brain*	getBrain() const;
 };
 
 #endif

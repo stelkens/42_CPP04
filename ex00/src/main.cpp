@@ -6,7 +6,7 @@
 /*   By: tstelken <tstelken@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 11:28:48 by tstelken          #+#    #+#             */
-/*   Updated: 2026/08/09 16:44:39 by tstelken         ###   ########.fr       */
+/*   Updated: 2026/08/10 17:01:40 by tstelken         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,8 @@ int main(){
 	wrong->makeSound();
 	std::cout << wrongCat->getType() << "\n";
 	wrongCat->makeSound();
+	WrongCat wCat;
+	wCat.makeSound();
 	
 	delete wrong;
 	delete wrongCat;
